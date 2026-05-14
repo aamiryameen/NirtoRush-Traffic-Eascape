@@ -21,7 +21,8 @@ android {
 
     defaultConfig {
         applicationId = "com.nitrorush.traffic_escape"
-        minSdk = flutter.minSdkVersion
+        // Explicit floor: AdMob, FCM and permission_handler all need API 23+.
+        minSdk = 23
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
         versionName = flutter.versionName
